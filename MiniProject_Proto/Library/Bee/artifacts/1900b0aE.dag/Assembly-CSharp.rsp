@@ -400,6 +400,7 @@
 "Assets/Player/Scripts/UI/CoolDownUI.cs"
 "Assets/Player/Scripts/UI/SteminaUI.cs"
 "Assets/Player/Scripts/UI/WeaponUI.cs"
+"Assets/Player/Scripts/Weapon/Bayonet.cs"
 "Assets/Player/Scripts/Weapon/Granade.cs"
 "Assets/Player/Scripts/Weapon/Gun.cs"
 "Assets/Player/Scripts/Weapon/GunController.cs"

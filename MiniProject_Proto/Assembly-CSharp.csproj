@@ -82,6 +82,7 @@
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\HM\2. Scripts\HM_GostScript\HM_Gost_SpawnPool.cs" />
+    <Compile Include="Assets\Player\Scripts\Weapon\Bayonet.cs" />
     <Compile Include="Assets\HM\2. Scripts\HM_MagicMonScript\HM_MagicMon_Ball_IP.cs" />
     <Compile Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
