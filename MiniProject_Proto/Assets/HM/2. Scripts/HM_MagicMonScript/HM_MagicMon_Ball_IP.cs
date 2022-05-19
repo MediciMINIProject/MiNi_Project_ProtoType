@@ -7,6 +7,8 @@ public class HM_MagicMon_Ball_IP : MonoBehaviour
     GameObject trPlyer;
     //GameObject ins_Magic;
 
+    Player player;
+
     Vector3 dir;
 
     public int magic_Speed;
@@ -19,6 +21,9 @@ public class HM_MagicMon_Ball_IP : MonoBehaviour
     {
         trPlyer = GameObject.FindGameObjectWithTag("Player");
         this.transform.LookAt(trPlyer.transform);
+
+        player = trPlyer.GetComponent<Player>();
+
 
         dir = trPlyer.transform.position - this.transform.position;
         dir.Normalize();
@@ -47,7 +52,11 @@ public class HM_MagicMon_Ball_IP : MonoBehaviour
         {
             Destroy(this.gameObject);
 
+            player.HEALTH -= 50;
+
             //플레이어 체력 --
+
+
         }
         else if(collision.gameObject.tag == "Wall")
         {

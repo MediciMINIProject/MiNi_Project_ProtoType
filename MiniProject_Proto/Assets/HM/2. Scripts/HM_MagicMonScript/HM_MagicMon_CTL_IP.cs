@@ -10,7 +10,7 @@ public class HM_MagicMon_CTL_IP : MonoBehaviour
 
     int magic_AttackStat = 20;
 
-    public int MAGIC_HELATH
+    public int MAGIC_HELATH // MagicMon 체력 프로퍼티
     {
         get { return magic_Helath; }
         set { magic_Helath = value; }
@@ -77,6 +77,14 @@ public class HM_MagicMon_CTL_IP : MonoBehaviour
             is_Live = false;
 
             Destroy(this.gameObject, 3);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Bullet")
+        {
+            MAGIC_HELATH -= 40;
         }
     }
 }

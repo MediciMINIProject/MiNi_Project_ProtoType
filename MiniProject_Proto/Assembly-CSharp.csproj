@@ -76,6 +76,7 @@
     <Compile Include="Assets\HM\2. Scripts\HM_GostScript\HM_Gost_SpawnPool.cs" />
     <Compile Include="Assets\HM\2. Scripts\HM_MagicMonScript\HM_MagicMon_Ball_IP.cs" />
     <Compile Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
+    <Compile Include="Assets\HM\2. Scripts\Boss\Boos_Test.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
     <Compile Include="Assets\TAL 1\Scripts\Weapon\Snipe.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\Animation&amp;Script\csShowAllEffect.cs" />
@@ -116,7 +117,6 @@
     <Compile Include="Assets\TAL 1\Scripts\UI\CoolDownUI.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\Animation&amp;Script\csDestroyEffect.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Boss\Boos_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Blended Premmultiply.shader" />
