@@ -70,6 +70,8 @@ public class Player : LivingEntity
     // Update is called once per frame
     void Update()
     {
+        print(health);
+
         Vector3 moveInput = new(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * normalspeed;
         controller.Move(moveVelocity);

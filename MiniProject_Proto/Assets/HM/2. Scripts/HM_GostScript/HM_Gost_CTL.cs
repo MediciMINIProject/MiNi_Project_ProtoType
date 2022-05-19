@@ -10,7 +10,8 @@ public class HM_Gost_CTL : MonoBehaviour
     [SerializeField]
     int gost_Health = 100;          // 체력
     int gost_Attack_Stat = 10;      // 공격력
-    public int GOST_HEALTH
+
+    public int GOST_HEALTH // Gost 체력 프로퍼티
     {
         get { return gost_Health; }
         set { gost_Health = value; }
@@ -34,6 +35,8 @@ public class HM_Gost_CTL : MonoBehaviour
 
     float attack_Timer = 0f;
     int attack_Delay = 2;
+
+    Player player;
 
     void Start()
     {
@@ -69,6 +72,22 @@ public class HM_Gost_CTL : MonoBehaviour
             is_Live = false;
             
             Destroy(this.gameObject, 3);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("Gost Hit");
+        if (collision.gameObject.tag == "Bullet")
+        {
+            
+            GOST_HEALTH -= 50;
+        }
+        else if(collision.gameObject.tag == "Player")
+        {
+            player = collision.gameObject.GetComponent<Player>();
+
+            player.HEALTH -= 30;
         }
     }
 }

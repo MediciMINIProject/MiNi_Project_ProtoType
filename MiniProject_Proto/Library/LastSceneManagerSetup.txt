@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/TAL 1/Trigger_A_Live.unity
+- path: Assets/HM/1. Scenes/PlusTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
