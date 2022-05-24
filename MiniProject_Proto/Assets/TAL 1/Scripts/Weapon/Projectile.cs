@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     public LayerMask collisionMask;
     
     float speed = 10f;
-    public float damage = 0.5f; // ÅºÈ¯ °ø°Ý·Â
+    public float damage = 30f; // ÅºÈ¯ °ø°Ý·Â
 
     void Start()
     {
@@ -29,6 +29,7 @@ public class Projectile : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 
+
     void CheckCollisions(float moveDistance) 
     {
         Ray ray = new Ray(transform.position, transform.forward);
@@ -43,7 +44,6 @@ public class Projectile : MonoBehaviour
     void OnHitObject(RaycastHit hit) 
     {
         IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
-
 
         if (damageableObject != null)
         {

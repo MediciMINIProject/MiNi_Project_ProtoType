@@ -45,11 +45,13 @@ public class HM_Gost_Anim : MonoBehaviour
 
                 if (gost_Ctl.is_delayOff)
                 {
+                    gost_anim.SetBool("IsIdle", false);
                     gost_anim.SetBool("IsArrange", true);
                 }
                 else
                 {
                     gost_anim.SetBool("IsIdle", true);
+                    gost_anim.SetBool("IsArrange", false);
                 }
             }
         }

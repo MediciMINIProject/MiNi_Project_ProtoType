@@ -1412,9 +1412,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8165956398978880452, guid: 4ce1bec452c28e341b0662809b8f09ff, type: 3}
+      propertyPath: magic_num_limit
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165956398978880452, guid: 4ce1bec452c28e341b0662809b8f09ff, type: 3}
+      propertyPath: magic_Spawn_time
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8165956398978880453, guid: 4ce1bec452c28e341b0662809b8f09ff, type: 3}
       propertyPath: m_Name
       value: MagicMonSpwan_Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165956398978880453, guid: 4ce1bec452c28e341b0662809b8f09ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce1bec452c28e341b0662809b8f09ff, type: 3}
@@ -1909,7 +1921,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8cbbb63587788004f88415017a102aec, type: 2}
+  - {fileID: 2100000, guid: 5abb3d18170c7cc4b8ce3577ef8b5ed8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2001,6 +2013,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4891062028952903832, guid: b49e002a2c8d96045ba0f13bb294bde6, type: 3}
+      propertyPath: gost_Spawn_num
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891062028952903832, guid: b49e002a2c8d96045ba0f13bb294bde6, type: 3}
+      propertyPath: gost_num_limit
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891062028952903832, guid: b49e002a2c8d96045ba0f13bb294bde6, type: 3}
+      propertyPath: gost_Spawn_time
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4891062028952903833, guid: b49e002a2c8d96045ba0f13bb294bde6, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2048,6 +2072,10 @@ PrefabInstance:
     - target: {fileID: 4891062028952903835, guid: b49e002a2c8d96045ba0f13bb294bde6, type: 3}
       propertyPath: m_Name
       value: GostSpwan_Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891062028952903835, guid: b49e002a2c8d96045ba0f13bb294bde6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4891062029299676326, guid: b49e002a2c8d96045ba0f13bb294bde6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2148,7 +2176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131801709}
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: 7, z: -10}
+  m_LocalPosition: {x: 0, y: 9.7, z: -19.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2162,6 +2190,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5562765530749467100, guid: 52eee0db4f82ff64fbda55af4db998a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.183
+      objectReference: {fileID: 0}
     - target: {fileID: 5562765531921831019, guid: 52eee0db4f82ff64fbda55af4db998a6, type: 3}
       propertyPath: m_Name
       value: Player

@@ -76,7 +76,6 @@
     <Compile Include="Assets\HM\2. Scripts\HM_GostScript\HM_Gost_SpawnPool.cs" />
     <Compile Include="Assets\HM\2. Scripts\HM_MagicMonScript\HM_MagicMon_Ball_IP.cs" />
     <Compile Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Boss\Boos_Test.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
     <Compile Include="Assets\TAL 1\Scripts\Weapon\Snipe.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\Animation&amp;Script\csShowAllEffect.cs" />
@@ -92,31 +91,26 @@
     <Compile Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
     <Compile Include="Assets\TAL 1\Scripts\LivingEntity.cs" />
     <Compile Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectController.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Gost_Script\Gost_Spawn.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Gost_Script\Gost_Controller.cs" />
     <Compile Include="Assets\TAL 1\Scripts\IDamageable.cs" />
     <Compile Include="Assets\TAL 1\Scripts\Weapon\Projectile.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Magic_Script\Monster_Magic.cs" />
     <Compile Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectDemo.cs" />
     <Compile Include="Assets\TAL 1\Scripts\Weapon\Missile.cs" />
     <Compile Include="Assets\TAL 1\Scripts\UI\SteminaUI.cs" />
     <Compile Include="Assets\TAL 1\Scripts\UI\WeaponUI.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Magic_Script\MagicMon_Spawn.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\Animation&amp;Script\csMouseOrbit.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Magic_Script\Magic_Monster_CTL.cs" />
     <Compile Include="Assets\TAL 1\Scripts\Weapon\Granade.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Boss\Boss.cs" />
     <Compile Include="Assets\TAL 1\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\HM\2. Scripts\HM_GostScript\HM_Gost_Move.cs" />
-    <Compile Include="Assets\HM\2. Scripts\Gost_Script\Gost_Move.cs" />
     <Compile Include="Assets\HM\2. Scripts\HM_MagicMonScript\HM_MagicMon_CTL_IP.cs" />
     <Compile Include="Assets\TAL 1\Scripts\Enemy.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
     <Compile Include="Assets\TAL 1\Scripts\UI\CoolDownUI.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\Animation&amp;Script\csDestroyEffect.cs" />
+    <Compile Include="Assets\HM\2. Scripts\HM_Gost_FIXED\HM_Gost_FSM_FIXED.cs" />
+    <Compile Include="Assets\HM\2. Scripts\HM_Gost_FIXED\HM_GostCTL_FIXED.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Blended Premmultiply.shader" />

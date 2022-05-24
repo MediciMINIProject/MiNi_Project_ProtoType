@@ -55,5 +55,9 @@ public class HM_Gost_Move : MonoBehaviour
         {
             gost_AI.isStopped = true;
         }
+
+
     }
+
+   
 }

@@ -8,6 +8,7 @@ TagManager:
   - wall
   - Gost
   - MagicMon
+  - Granade
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Monster
   - 
   - 
   - 
