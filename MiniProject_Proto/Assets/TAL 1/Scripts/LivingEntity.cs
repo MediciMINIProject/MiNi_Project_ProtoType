@@ -6,7 +6,7 @@ public class LivingEntity : MonoBehaviour, IDamageable
 {
     public float StartingHealth = 100; //시작 체력
 
-    protected float health ; //현재 체력
+    public float health ; //현재 체력
 
     public float HEALTH
     {
@@ -49,7 +49,7 @@ public class LivingEntity : MonoBehaviour, IDamageable
     protected void Dead() 
     {
         dead = true;
-        GameObject.Destroy(gameObject);
+        GameObject.Destroy(gameObject,2f);
     }
 
     // Update is called once per frame

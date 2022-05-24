@@ -109,6 +109,8 @@
     <Compile Include="Assets\TAL 1\Scripts\UI\CoolDownUI.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
     <Compile Include="Assets\HM\5. Assets\52SpecialEffectPack\Animation&amp;Script\csDestroyEffect.cs" />
+    <Compile Include="Assets\HM\2. Scripts\HM_Gost_FIXED\HM_Gost_FSM_FIXED.cs" />
+    <Compile Include="Assets\HM\2. Scripts\HM_Gost_FIXED\HM_GostCTL_FIXED.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HM\5. Assets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Blended Premmultiply.shader" />

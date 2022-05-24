@@ -9,13 +9,11 @@ public class Projectile : MonoBehaviour
     public LayerMask collisionMask;
     
     float speed = 10f;
-    public float damage = 0.5f; // ÅºÈ¯ °ø°Ý·Â
-
-
+    public float damage = 30f; // ÅºÈ¯ °ø°Ý·Â
 
     void Start()
     {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 1f);
     }
 
     public void SetSpeed(float newSpeed) {
@@ -26,51 +24,9 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         float moveDistance = speed * Time.deltaTime;
-        //CheckCollisions(moveDistance);
+        CheckCollisions(moveDistance);
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "MagicMon")
-        {
-            other.gameObject.GetComponent<HM_MagicMon_CTL_IP>().isHit = true;
-
-            print("mmÀÌ ÃÑ¿¡ ¸ÂÀ½");
-
-            Destroy(this.gameObject);
-        }
-        else if (other.gameObject.tag == "Gost")
-        {
-            other.gameObject.GetComponent<HM_Gost_CTL>().isHit = true;
-
-            print("gost°¡ ÃÑ¿¡ ¸ÂÀ½");
-
-            Destroy(this.gameObject);
-        }
-
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        print("HIT!!");
-        if(collision.gameObject.tag == "MagicMon")
-        {
-            collision.gameObject.GetComponent<HM_MagicMon_CTL_IP>().isHit = true;
-
-            print("mmÀÌ ÃÑ¿¡ ¸ÂÀ½");
-
-            Destroy(this.gameObject);
-        }
-        else if(collision.gameObject.tag == "Gost")
-        {
-            collision.gameObject.GetComponent<HM_Gost_CTL>().isHit = true;
-
-            print("gost°¡ ÃÑ¿¡ ¸ÂÀ½");
-
-            Destroy(this.gameObject);
-        }
     }
 
 
@@ -81,16 +37,13 @@ public class Projectile : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, moveDistance, collisionMask, QueryTriggerInteraction.Collide))
         {
-            //OnHitObject(hit);
-
-           
+            OnHitObject(hit);
         }
     }
 
     void OnHitObject(RaycastHit hit) 
     {
         IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
-
 
         if (damageableObject != null)
         {
