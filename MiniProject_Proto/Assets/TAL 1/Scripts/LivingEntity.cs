@@ -36,7 +36,7 @@ public class LivingEntity : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeHit2(float damage) //수류탄을 위한 데미지 계산식 (단순 데미지 받는 공식)
+    public virtual void TakeHit2(float damage) //수류탄을 위한 데미지 계산식 (단순 데미지 받는 공식)
     {
         HEALTH -= damage;
 

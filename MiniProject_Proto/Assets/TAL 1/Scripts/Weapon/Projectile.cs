@@ -11,9 +11,11 @@ public class Projectile : MonoBehaviour
     float speed = 10f;
     public float damage = 0.5f; // 탄환 공격력
 
+
+
     void Start()
     {
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 2f);
     }
 
     public void SetSpeed(float newSpeed) {
@@ -24,10 +26,53 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         float moveDistance = speed * Time.deltaTime;
-        CheckCollisions(moveDistance);
+        //CheckCollisions(moveDistance);
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "MagicMon")
+        {
+            other.gameObject.GetComponent<HM_MagicMon_CTL_IP>().isHit = true;
+
+            print("mm이 총에 맞음");
+
+            Destroy(this.gameObject);
+        }
+        else if (other.gameObject.tag == "Gost")
+        {
+            other.gameObject.GetComponent<HM_Gost_CTL>().isHit = true;
+
+            print("gost가 총에 맞음");
+
+            Destroy(this.gameObject);
+        }
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("HIT!!");
+        if(collision.gameObject.tag == "MagicMon")
+        {
+            collision.gameObject.GetComponent<HM_MagicMon_CTL_IP>().isHit = true;
+
+            print("mm이 총에 맞음");
+
+            Destroy(this.gameObject);
+        }
+        else if(collision.gameObject.tag == "Gost")
+        {
+            collision.gameObject.GetComponent<HM_Gost_CTL>().isHit = true;
+
+            print("gost가 총에 맞음");
+
+            Destroy(this.gameObject);
+        }
+    }
+
 
     void CheckCollisions(float moveDistance) 
     {
@@ -36,7 +81,9 @@ public class Projectile : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, moveDistance, collisionMask, QueryTriggerInteraction.Collide))
         {
-            OnHitObject(hit);
+            //OnHitObject(hit);
+
+           
         }
     }
 

@@ -9,11 +9,11 @@ public class Missile : MonoBehaviour
 
     float speed = 10f; //날아가는 속도
 
-    public float explodeForce = 10f; //폭발 위력
-    public float radius = 2.0f; //폭발반경
+    public float explodeForce = 5f; //폭발 위력
+    public float radius = 3.0f; //폭발반경
 
-    public float directdamage = 3f; //직격시 주는 피해량
-    public float explodedamage = 1.5f; //폭발 피해량
+    public float directdamage = 100f; //직격시 주는 피해량
+    public float explodedamage = 100f; //폭발 피해량
    
     // Start is called before the first frame update
     void Start()
@@ -72,15 +72,16 @@ public class Missile : MonoBehaviour
             Rigidbody rig = near.GetComponent<Rigidbody>();
             LivingEntity livingEntity = near.GetComponent<LivingEntity>();
 
+            if (livingEntity != null)
+            {
+                livingEntity.TakeHit2(explodedamage); //반경내 엔티티에게 데미지      
+            }
+
             if (rig != null)
             {
                 rig.AddExplosionForce(explodeForce, transform.position, radius, 1f, ForceMode.Impulse); //반경내 엔티티 밀려남.
             }
 
-            if (livingEntity != null)
-            {
-                livingEntity.TakeHit2(explodedamage); //반경내 엔티티에게 데미지      
-            }
 
         }
         Instantiate(explosionEffect, transform.position, transform.rotation);

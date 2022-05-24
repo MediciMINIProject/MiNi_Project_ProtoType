@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/HM/1. Scenes/PlusTest.unity
+- path: D:/Github/MiNi_Project_ProtoType/MiniProject_Proto/Assets/HM/1. Scenes/Collab_Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
